@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 show *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 *)",
+      "PowerShell(Get-Content \"c:\\\\Users\\\\hyup\\\\Desktop\\\\크롤링\\\\notebooks\\\\02_BeautifulSoup_완전정복.ipynb\" -Raw | ConvertFrom-Json | Select-Object -ExpandProperty cells | ForEach-Object { $_.cell_type + \" | \" + \\($_.source -join \"\"\\).Substring\\(0, [Math]::Min\\(80, \\($_.source -join \"\"\\).Length\\)\\) })",
+      "Bash(python *)",
+      "PowerShell(python \"c:\\\\Users\\\\hyup\\\\Desktop\\\\크롤링\\\\add_cells.py\")"
+    ]
+  }
+}
