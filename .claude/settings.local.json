@@ -6,7 +6,11 @@
       "Bash(python3 *)",
       "PowerShell(Get-Content \"c:\\\\Users\\\\hyup\\\\Desktop\\\\크롤링\\\\notebooks\\\\02_BeautifulSoup_완전정복.ipynb\" -Raw | ConvertFrom-Json | Select-Object -ExpandProperty cells | ForEach-Object { $_.cell_type + \" | \" + \\($_.source -join \"\"\\).Substring\\(0, [Math]::Min\\(80, \\($_.source -join \"\"\\).Length\\)\\) })",
       "Bash(python *)",
-      "PowerShell(python \"c:\\\\Users\\\\hyup\\\\Desktop\\\\크롤링\\\\add_cells.py\")"
+      "PowerShell(python \"c:\\\\Users\\\\hyup\\\\Desktop\\\\크롤링\\\\add_cells.py\")",
+      "Bash(curl -s \"https://apis.data.go.kr/1661000/EmergencyInformationService/getEmergencyInfo?serviceKey=212bef750a3bdeeb70809f5c873a4137985e78c5f56810ec11d5d9369b42e9e4&pageNo=1&numOfRows=5&type=json\")",
+      "Bash(curl *)",
+      "WebSearch",
+      "WebFetch(domain:www.data.go.kr)"
     ]
   }
 }
